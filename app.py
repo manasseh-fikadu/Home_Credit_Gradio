@@ -60,4 +60,4 @@ iface = gr.Interface(fn=get_prediction,
                      interpretation="default")
 
 # Launch the app
-iface.launch(share=True)
+iface.launch(server_port=7000, server_name='0.0.0.0')
