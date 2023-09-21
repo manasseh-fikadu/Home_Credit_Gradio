@@ -6,8 +6,8 @@ import joblib
 from matplotlib import pyplot as plt
 
 # Load the model and test set for SHAP
-model = joblib.load('./models/catboost_reduced.joblib')
-test_set = joblib.load('./data/x_test.joblib')
+model = joblib.load('./catboost_reduced.joblib')
+test_set = joblib.load('./x_test.joblib')
 
 # Create a SHAP explainer
 explainer = shap.TreeExplainer(model)
